@@ -1,0 +1,36 @@
+<view>
+    <block wx:for="{{result}}">
+
+        <block wx:for="{{item}}">
+        <block wx:for="{{item}}">
+        <block wx:for="{{item}}">
+        <block wx:for="{{item.RoomStatusGraphItem[0]}}">
+
+
+        <block wx:for="{{item}}">
+            {{item}}
+
+        </block>
+        </block>
+        </block>
+        </block>
+        </block>
+    </block>
+    <block wx:for="{{result}}">
+
+        <block wx:for="{{item}}">
+        <block wx:for="{{item}}">
+        <block wx:for="{{item}}">
+        <block wx:for="{{item.RoomStatusGraphItem[1]}}">
+
+
+        <block wx:for="{{item}}">
+            {{item}}
+
+        </block>
+        </block>
+        </block>
+        </block>
+        </block>
+    </block>
+</view>
