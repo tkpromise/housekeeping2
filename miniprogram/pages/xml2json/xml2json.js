@@ -25,12 +25,8 @@ Page ({
             complete:res => {
               console.log(res)
               console.log('--------')
-              let string = JSON.stringify(xml2json(res.result))
               console.log(xml2json(res.result))
-              //console.log(string)
-              //console.log(JSON.parse(string))
               this.setData({
-                //result:(JSON.parse(string))
                 result:xml2json(res.result)
 
               })

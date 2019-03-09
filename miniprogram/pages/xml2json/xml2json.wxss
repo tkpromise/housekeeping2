@@ -1,0 +1,12 @@
+page {
+    background: #f6f8f9;
+}
+.room-container {
+    display: flex;
+    background: #b2b2b2;
+}
+.room-item {
+    height: 75rpx;
+    margin: 16rpx;
+    border-radius: 32px;
+}

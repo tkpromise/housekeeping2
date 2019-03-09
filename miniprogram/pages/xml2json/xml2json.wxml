@@ -1,36 +1,15 @@
-<view>
-    <block wx:for="{{result}}">
-
-        <block wx:for="{{item}}">
-        <block wx:for="{{item}}">
-        <block wx:for="{{item}}">
-        <block wx:for="{{item.RoomStatusGraphItem[0]}}">
-
-
-        <block wx:for="{{item}}">
-            {{item}}
-
+<view class='room-container'>
+<block wx:for="{{result['soap:Envelope']['soap:Body'].GetCurrentRoomStatusGraphResponse.GetCurrentRoomStatusGraphResult.RoomStatusGraphItem}}">
+    <view class='room-item'>
+        <block wx:for="{{item.RoomNo}}" wx:for-index='index'>
+            房号:{{item}}
         </block>
+        <block wx:for="{{item.HouseKeepState}}" wx:for-index='index'>
+            <span wx:if="{{item == 'StopSaleRoom'}}">stop</span>
         </block>
-        </block>
-        </block>
-        </block>
-    </block>
-    <block wx:for="{{result}}">
-
-        <block wx:for="{{item}}">
-        <block wx:for="{{item}}">
-        <block wx:for="{{item}}">
-        <block wx:for="{{item.RoomStatusGraphItem[1]}}">
-
-
-        <block wx:for="{{item}}">
-            {{item}}
-
-        </block>
-        </block>
-        </block>
-        </block>
-        </block>
-    </block>
+    </view>
+</block>
 </view>
+
+
+

@@ -14,8 +14,10 @@ exports.main = async (event, context) => {
     '<nChainID>1</nChainID>' +
     '<nRoomTypeID>1</nRoomTypeID>' +
     '<lsRoomNo>' +
+    '<string>8202</string>' +
+    '<string>8203</string>' +
     '<string>8205</string>' +
-    '<string>8209</string>' +
+    '<string>8806</string>' +
     '</lsRoomNo>' +
     '</GetCurrentRoomStatusGraph>' +
     '</soap:Body>' +
